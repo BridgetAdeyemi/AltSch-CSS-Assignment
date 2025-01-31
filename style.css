@@ -1,0 +1,75 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+section {
+  background-image: radial-gradient(circle, rgb(7, 7, 65), rgb(102, 0, 128));
+  /* background-color: rgb(102, 0, 128); */
+  width: 100%;
+  height: auto;
+  padding-bottom: 4rem;
+}
+section .names {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 5.5rem;
+  padding-top: 4rem;
+}
+section .names h1 {
+  color: #c2c2c2;
+  font-family: sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  line-height: 1.2;
+}
+section .names p i {
+  color: #c2c2c2;
+  font-size: 2rem;
+}
+.names p:last-child {
+  color: #c2c2c2;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  text-align: center;
+}
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  column-gap: 2rem;
+}
+.buttons a {
+  text-decoration: none;
+  color: #c2c2c2;
+  border: 2px solid #ddd;
+  padding: 1rem 1.5rem;
+  font-size: 1rem;
+  font-family: sans-serif;
+  border-radius: 8px;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  section .names h1 {
+    font-size: 3rem;
+  }
+  section .names p i {
+    font-size: 1.5rem;
+  }
+  .names p:last-child {
+    font-size: 1.2rem;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    row-gap: 2rem;
+  }
+  .buttons a {
+    padding: 0.8rem 1.3rem;
+    font-size: 0.9rem;
+  }
+}
